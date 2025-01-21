@@ -31,6 +31,12 @@ namespace COMP003A.LectureActivity2
             bool isAdult = userAge >= 18; // Determine if user is 18+
             bool isAdultStudent = isStudent && isAdult; // Determine if the user is student AND an adult
 
+            // 3.3 Display outputs using string interpolation
+            Console.WriteLine($"\nHello, {userName}!"); // Greet user with their name
+            Console.WriteLine($"You are currently {userAge} years old. In 5 years, you will be {futureAge}."); // Display current and future age
+            Console.WriteLine($"Are you 18 or older? {isAdult}"); // Display if user is 18+
+            Console.WriteLine($"Are you both a student and 18 or older? {isAdultStudent}"); // Display if user is adult and student
+
         }
     }
 }
