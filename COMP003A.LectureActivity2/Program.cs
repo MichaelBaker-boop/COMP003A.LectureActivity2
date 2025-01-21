@@ -8,6 +8,7 @@ namespace COMP003A.LectureActivity2
     {
         static void Main(string[] args)
         {
+           // Step 3.1: Declare and initialize variables
             string userName;
             int userAge;
             double productPrice;
@@ -24,6 +25,11 @@ namespace COMP003A.LectureActivity2
 
             Console.Write("Are you a student? (true/false): ");
             isStudent = bool.Parse(Console.ReadLine()); // Convert and assign input to isStudent
+
+            // 3.2 Perform Calculations
+            int futureAge = userAge + 5; // Calculate user age in 5 years
+            bool isAdult = userAge >= 18; // Determine if user is 18+
+            bool isAdultStudent = isStudent && isAdult; // Determine if the user is student AND an adult
 
         }
     }
